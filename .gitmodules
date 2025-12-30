@@ -1,0 +1,3 @@
+[submodule "Electronics/DWlib"]
+	path = Electronics/DWlib
+	url = git@github.com:dwatman/DWlib.git
