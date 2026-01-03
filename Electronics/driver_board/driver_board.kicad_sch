@@ -1020,6 +1020,157 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "DWlib:LMW78_0.5R"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LMW78_xx-0.5R"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "DWlib:Converter_DCDC_GAPTEC_LMW78_THT"
+				(at 1.27 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://gaptec-electronic.com/datenblaetter/LMW78_0.5R.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.5A Step-Down DC/DC-Regulator, up to 90V input, non-isolated, -40°C to +85°C, SIP3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "LMW78_xx-0.5R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "dc-dc gaptec Step-Down DC/DC-Regulator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*DCDC*GAPTEC*LMW78*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LMW78_0.5R_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LMW78_0.5R_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "DWlib:REF3433TIDBVR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3770,6 +3921,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Input: 18-90 V DC"
+		(exclude_from_sim no)
+		(at 39.37 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f3432a72-1c70-493a-acbe-b65343db9177")
+	)
 	(junction
 		(at 74.93 133.35)
 		(diameter 0)
@@ -5616,6 +5777,87 @@
 		)
 	)
 	(symbol
+		(lib_id "DWlib:LMW78_0.5R")
+		(at 123.19 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59d176a9-6598-46ac-8978-f2722057f3b5")
+		(property "Reference" "U6"
+			(at 119.38 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMW78_12-0.5R"
+			(at 132.08 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "DWlib:Converter_DCDC_GAPTEC_LMW78_THT"
+			(at 124.46 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://gaptec-electronic.com/datenblaetter/LMW78_0.5R.pdf"
+			(at 123.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.5A Step-Down DC/DC-Regulator, up to 90V input, non-isolated, -40°C to +85°C, SIP3"
+			(at 123.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LMW78_12-0.5R"
+			(at 123.19 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9e5eb419-842b-4391-86c6-8c155aac4d3f")
+		)
+		(pin "3"
+			(uuid "1f58f40e-eb30-496f-b413-6bc611689715")
+		)
+		(pin "1"
+			(uuid "e3d1d33f-04e1-4b99-b87b-75b3b4158021")
+		)
+		(instances
+			(project ""
+				(path "/90d9ae7d-4001-450f-acdb-4ca976b51116"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDA")
 		(at 111.76 20.32 0)
 		(unit 1)
@@ -5879,7 +6121,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 166.37 25.4 0)
+		(at 157.48 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5887,7 +6129,7 @@
 		(dnp no)
 		(uuid "717c6f31-2221-4b1f-a14a-4bd1c3ce2faa")
 		(property "Reference" "#PWR012"
-			(at 166.37 29.21 0)
+			(at 157.48 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5896,7 +6138,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 166.37 21.59 0)
+			(at 157.48 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5904,7 +6146,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 25.4 0)
+			(at 157.48 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5913,7 +6155,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 25.4 0)
+			(at 157.48 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5922,7 +6164,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 166.37 25.4 0)
+			(at 157.48 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7672,6 +7914,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 135.89 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dab5e45a-f614-4235-bcb8-1c688b48c749")
+		(property "Reference" "#PWR027"
+			(at 135.89 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 135.89 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 135.89 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3914645-6af8-4551-b1dd-73370ccfc1e6")
+		)
+		(instances
+			(project "driver_board"
+				(path "/90d9ae7d-4001-450f-acdb-4ca976b51116"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "DWlib:UCC27302ADRCR")
 		(at 177.8 137.16 0)
 		(unit 1)
@@ -7981,6 +8288,71 @@
 			(project "driver_board"
 				(path "/90d9ae7d-4001-450f-acdb-4ca976b51116"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+VDC")
+		(at 111.76 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee363a2c-4ae7-4178-bd5b-34573947d570")
+		(property "Reference" "#PWR026"
+			(at 111.76 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VDC"
+			(at 111.76 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+VDC\""
+			(at 111.76 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b95ddbce-fa20-46f8-9a49-d5fd50bb428c")
+		)
+		(instances
+			(project "driver_board"
+				(path "/90d9ae7d-4001-450f-acdb-4ca976b51116"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
