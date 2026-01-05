@@ -440,6 +440,10 @@
     [
       "a270d986-69bc-4858-bd8b-7659b3dd8570",
       "power"
+    ],
+    [
+      "b498c85e-3d95-495c-baed-daa9b16c230d",
+      "hbridge"
     ]
   ],
   "text_variables": {}
