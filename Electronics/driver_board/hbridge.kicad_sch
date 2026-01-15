@@ -2339,7 +2339,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "add protection"
+	(text "add capacitors"
 		(exclude_from_sim no)
 		(at 114.3 68.58 0)
 		(effects
