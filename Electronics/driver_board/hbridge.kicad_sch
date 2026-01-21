@@ -2339,16 +2339,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "add capacitors"
-		(exclude_from_sim no)
-		(at 114.3 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "913af4af-1e1c-4604-84d2-5bb943881427")
-	)
 	(text "add protection"
 		(exclude_from_sim no)
 		(at 254 25.4 0)
@@ -2388,6 +2378,12 @@
 		(uuid "1c48606d-fbc2-4a6c-9a88-c1d98d93f4eb")
 	)
 	(junction
+		(at 102.87 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27243a49-2ca3-4b7f-b23d-0115add0f46a")
+	)
+	(junction
 		(at 203.2 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2398,6 +2394,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c847189-83dd-44c5-a717-27b540099099")
+	)
+	(junction
+		(at 102.87 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4261b6e9-5423-4aff-8151-a96875e388de")
 	)
 	(junction
 		(at 165.1 33.02)
@@ -2537,6 +2539,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 60.96) (xy 107.95 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01fdd338-7adf-4d5c-812b-f004d245060d")
+	)
+	(wire
+		(pts
 			(xy 102.87 133.35) (xy 102.87 134.62)
 		)
 		(stroke
@@ -2637,7 +2649,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 119.38) (xy 102.87 121.92)
+			(xy 102.87 111.76) (xy 102.87 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3007,7 +3019,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 68.58) (xy 102.87 71.12)
+			(xy 102.87 60.96) (xy 102.87 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3204,6 +3216,16 @@
 			(type default)
 		)
 		(uuid "b79bc39b-4dc0-4e16-9103-5ab8e5cb6a83")
+	)
+	(wire
+		(pts
+			(xy 102.87 111.76) (xy 107.95 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b92d636f-ca22-431d-8822-17eb9b1e9eaf")
 	)
 	(wire
 		(pts
@@ -4973,7 +4995,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.17 127 0)
 			(effects
 				(font
@@ -4993,6 +5015,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 90.17 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RCS06034R70FKEA"
+			(at 90.17 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5823,7 +5854,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.17 88.9 0)
 			(effects
 				(font
@@ -5850,6 +5881,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RCS06034R70FKEA"
+			(at 90.17 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "76b2b9d3-e05c-4160-adc5-4f8edff08f17")
 		)
@@ -5860,6 +5900,71 @@
 			(project "driver_board"
 				(path "/90d9ae7d-4001-450f-acdb-4ca976b51116/b498c85e-3d95-495c-baed-daa9b16c230d"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 107.95 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a1e5208-f367-4e69-9702-f63141d4a000")
+		(property "Reference" "#PWR067"
+			(at 107.95 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDP"
+			(at 107.95 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "090cf9d8-4f6e-4ef3-9b4e-404fc9ad109f")
+		)
+		(instances
+			(project "driver_board"
+				(path "/90d9ae7d-4001-450f-acdb-4ca976b51116/b498c85e-3d95-495c-baed-daa9b16c230d"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -6411,6 +6516,144 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 107.95 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8fb7f7dc-f11e-4195-a789-533edaa1dcbd")
+		(property "Reference" "C43"
+			(at 109.728 113.284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.47u 200V"
+			(at 109.728 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 107.95 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 107.95 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8555c94d-1891-4b4d-b134-f0fd9b7a0010")
+		)
+		(pin "2"
+			(uuid "c425b20f-dd23-4996-b9d7-9585fa49de01")
+		)
+		(instances
+			(project "driver_board"
+				(path "/90d9ae7d-4001-450f-acdb-4ca976b51116/b498c85e-3d95-495c-baed-daa9b16c230d"
+					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 107.95 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95a6f980-88ef-4fec-a080-342078a446e7")
+		(property "Reference" "C42"
+			(at 109.728 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.47u 200V"
+			(at 109.728 64.516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "beeb8bb3-d754-4726-9dde-5691b638d444")
+		)
+		(pin "2"
+			(uuid "9937f83c-8669-42d2-a4d7-0c80afb59470")
+		)
+		(instances
+			(project "driver_board"
+				(path "/90d9ae7d-4001-450f-acdb-4ca976b51116/b498c85e-3d95-495c-baed-daa9b16c230d"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 203.2 36.83 0)
 		(unit 1)
@@ -6619,7 +6862,7 @@
 	)
 	(symbol
 		(lib_id "power:+VDC")
-		(at 102.87 119.38 0)
+		(at 102.87 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6627,7 +6870,7 @@
 		(dnp no)
 		(uuid "a5ca182a-7db2-426f-acd9-e875e1af36f2")
 		(property "Reference" "#PWR056"
-			(at 102.87 121.92 0)
+			(at 102.87 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6636,7 +6879,7 @@
 			)
 		)
 		(property "Value" "+VDC"
-			(at 102.87 113.03 0)
+			(at 102.87 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6644,7 +6887,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 119.38 0)
+			(at 102.87 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6653,7 +6896,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 119.38 0)
+			(at 102.87 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6662,7 +6905,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 102.87 119.38 0)
+			(at 102.87 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6911,6 +7154,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 107.95 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b130aa9f-d494-4646-a6d1-47c6f1d6b206")
+		(property "Reference" "#PWR068"
+			(at 107.95 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDP"
+			(at 107.95 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 107.95 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2a10c7d-4f74-4b50-86ad-2bd69cc1d747")
+		)
+		(instances
+			(project "driver_board"
+				(path "/90d9ae7d-4001-450f-acdb-4ca976b51116/b498c85e-3d95-495c-baed-daa9b16c230d"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 71.12 59.69 0)
 		(unit 1)
@@ -7067,7 +7375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.17 76.2 0)
 			(effects
 				(font
@@ -7087,6 +7395,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 90.17 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RCS06034R70FKEA"
+			(at 90.17 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7494,7 +7811,7 @@
 	)
 	(symbol
 		(lib_id "power:+VDC")
-		(at 102.87 68.58 0)
+		(at 102.87 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7502,7 +7819,7 @@
 		(dnp no)
 		(uuid "e2ced37d-53c8-4fe8-97e8-4d23da713f68")
 		(property "Reference" "#PWR054"
-			(at 102.87 71.12 0)
+			(at 102.87 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7511,7 +7828,7 @@
 			)
 		)
 		(property "Value" "+VDC"
-			(at 102.87 62.23 0)
+			(at 102.87 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7519,7 +7836,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 68.58 0)
+			(at 102.87 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7528,7 +7845,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 68.58 0)
+			(at 102.87 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7537,7 +7854,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 102.87 68.58 0)
+			(at 102.87 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7990,7 +8307,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.17 139.7 0)
 			(effects
 				(font
@@ -8010,6 +8327,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 90.17 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RCS06034R70FKEA"
+			(at 90.17 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
